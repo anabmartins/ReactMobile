@@ -20,6 +20,7 @@ export function Login() {
 
   return (
     <View style={styles.container}>
+    
       <Image
         source={require("../../../assets/logo.svg")}
         style={styles.logo}
@@ -27,6 +28,25 @@ export function Login() {
       <Text style={styles.title}>Bem-Vindo</Text>
       <Text style={styles.subtitle}>ao Controle de estoque</Text>
 
+      <View style={styles.login}>
+      <Text style={[styles.title, { textAlign: 'left'}]}>Login:</Text>
+      <TextInput 
+       style={styles.inputs}
+       placeholder="Ex: Lucas Pinto da Silva"
+       placeholderTextColor={"#6A6A6A"}
+      >
+      </TextInput>
+      <Text style={[styles.title, { marginTop: 25}]}>Senha:</Text>
+      <TextInput 
+       style={styles.inputs}
+       placeholder="Ex: 03041252"
+       secureTextEntry
+       placeholderTextColor={"#6A6A6A"}
+      >
+      </TextInput>
+      </View>
+
+<View style={styles.bts}>
       <TouchableOpacity style={styles.button} onPress={Login}>
         <Text style={styles.buttonText}>Entrar</Text>
       </TouchableOpacity>
@@ -35,9 +55,16 @@ export function Login() {
         <Text style={styles.buttonText}>Cadastrar</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.button} onPress={ForgetPass}>
-        <Text style={styles.buttonText}>Esqueci minha senha</Text>
+</View>
+<View style={styles.s}>
+      <TouchableOpacity onPress={ForgetPass} style={styles.senha}>
+        <Text style={styles.text}>Esqueci minha senha</Text>
+        <Image
+         source={require("../../../assets/q-mark.png")}
+         style={styles.qm}
+        ></Image>
       </TouchableOpacity>
+</View>
     </View>
   );
 }
