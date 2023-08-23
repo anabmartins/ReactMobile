@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 // Drawer
 import { DrawerRoutes } from '../drawer/drawer.routes';
@@ -32,6 +32,7 @@ export function StackRoutes() {
         name="Login"
         options={{
           title: "Login",
+          headerShown: false,
         }}
         component={Login}
       />
