@@ -1,12 +1,19 @@
 import * as React from "react";
-import { View, Text, TextInput, TouchableOpacity, Image } from "react-native";
+import { View, Text, TextInput, TouchableOpacity } from "react-native";
 import Modal from "react-native-modal";
+import { useFonts, Inter_100Thin, Inter_700Bold } from '@expo-google-fonts/inter';
 
 import { useNavigation } from "@react-navigation/native";
 
 import styles from "./styles";
 
 export function Register() {
+
+ useFonts({
+    Inter_100Thin,
+    Inter_700Bold
+    });
+
   const navigation = useNavigation();
 
   const [isModalVisible, setModalVisible] = React.useState(false); // Estado para controlar a visibilidade do modal

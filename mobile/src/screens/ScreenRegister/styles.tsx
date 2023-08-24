@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontWeight: 'normal',
     marginBottom: 5,
-    fontFamily: 'Inter-Black',
+    fontFamily: 'Inter_700Bold',
   },
   subtitle: {
     color: '#737373',

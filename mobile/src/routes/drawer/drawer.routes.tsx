@@ -12,17 +12,25 @@ import { product } from "../../screens/ScreenProduct";
 import { Productdetails } from "../../screens/ScreenProductdetails"; 
 import { productprofile } from "../../screens/ScreenProductprofile";
 
+import  Header  from '../../components/Header'
+
 const { Screen, Navigator } = createDrawerNavigator();
 
 export function DrawerRoutes() {
   return (
-    <Navigator>
+    <Navigator
+    screenOptions={{
+      drawerStyle: {
+      backgroundColor: '#70B6E4'
+    }}}
+    >
         <Screen
         name="Home"
         component={Home}
         options={{
           drawerLabel: "Home",
           drawerIcon: () => <MaterialIcons name="location-pin" size={22} />,
+          header: () => <Header/>
         }}
       />
 

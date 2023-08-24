@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { Drawer } from './src/routes/drawer';
+import { Stack } from './src/routes/stack';
 
 export default function App() {
   return (
-      <Drawer/>
+      <Stack/>
   );
 }
 

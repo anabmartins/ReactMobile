@@ -39,6 +39,7 @@ export function StackRoutes() {
       <Screen
         name="ForgetPassword"
         options={{
+          headerShown: false,
           title: "ForgetPassword",
           headerTitleAlign: "left",
           headerStyle: {
