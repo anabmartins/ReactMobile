@@ -1,31 +1,21 @@
-import React from 'react';
-import { View, StyleSheet, Button} from 'react-native';
+import * as React from 'react';
+import { View, Text} from 'react-native';
 
 import { useNavigation } from '@react-navigation/native';
 
+import styles from './styles'
 
 export function Home() {
-    const navigation = useNavigation();
+    // const navigation = useNavigation();
   
-    function openScreen(){
-        navigation.navigate('profile ')
-    }
+    // function profile(){
+    //     navigation.navigate('profile')
+    // }
   
     return (
     <View style={styles.container}>
-        <Button
-            title="Ir para Profile"
-            onPress={openScreen}
-            color="#fff"
-        />
+        <Text>Bem-Vindo</Text>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: "brown",
-        justifyContent: "center"
-    }
-})

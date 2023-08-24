@@ -3,20 +3,18 @@ import * as React from 'react';
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { MaterialIcons } from "@expo/vector-icons";
 // Telas
-import { Home } from "../../screens/ScreenHome"; 
-import { Register } from "../../screens/ScreenRegister";
-import { Profile } from "../../screens/ScreenProfile";
-import { Environments } from "../../screens/ScreenEnvironments"; 
-import { Environmentsprofile } from "../../screens/ScreenEnvironmentsprofile";
-import { product } from "../../screens/ScreenProduct"; 
-import { Productdetails } from "../../screens/ScreenProductdetails"; 
-import { productprofile } from "../../screens/ScreenProductprofile";
+import { Home } from "../../screens/Home"; 
+import { Profile } from "../../screens/Profile";
+import { Environments } from "../../screens/Environments"; 
+import { Product } from "../../screens/Product"; 
+import { ProductDetails } from "../../screens/ProductDetails"; 
+import { ProductProfile } from "../../screens/ProductProfile";
 
 const { Screen, Navigator } = createDrawerNavigator();
 
 export function DrawerRoutes() {
   return (
-    <Navigator>
+    <Navigator initialRouteName="Home">
         <Screen
         name="Home"
         component={Home}
@@ -27,16 +25,7 @@ export function DrawerRoutes() {
       />
 
       <Screen
-        name="Register"
-        component={Register}
-        options={{
-          drawerLabel: "Register",
-          drawerIcon: () => <MaterialIcons name="add" size={22} />,
-        }}
-      />
-
-      <Screen
-        name="Profile"
+        name="Perfil"
         component={Profile}
         options={{
           drawerLabel: "Profile",
@@ -45,7 +34,7 @@ export function DrawerRoutes() {
       />
 
       <Screen
-        name="Environments"
+        name="Ambientes"
         component={Environments}
         options={{
           drawerLabel: "Environments",
@@ -54,37 +43,28 @@ export function DrawerRoutes() {
       />
 
       <Screen
-        name="Environmentsprofile"
-        component={Environmentsprofile}
+        name="Perfil"
+        component={Product}
         options={{
-          drawerLabel: "Environmentsprofile",
+          drawerLabel: "Product",
           drawerIcon: () => <MaterialIcons name="add" size={22} />,
         }}
       />
 
       <Screen
-        name="product"
-        component={product}
+        name="ProductDetails"
+        component={ProductDetails}
         options={{
-          drawerLabel: "product",
+          drawerLabel: "ProductDetails",
           drawerIcon: () => <MaterialIcons name="add" size={22} />,
         }}
       />
 
       <Screen
-        name="Productdetails"
-        component={Productdetails}
+        name="productProfile"
+        component={ProductProfile}
         options={{
-          drawerLabel: "Productdetails",
-          drawerIcon: () => <MaterialIcons name="add" size={22} />,
-        }}
-      />
-
-      <Screen
-        name="productprofile"
-        component={productprofile}
-        options={{
-          drawerLabel: "productprofile",
+          drawerLabel: "productProfile",
           drawerIcon: () => <MaterialIcons name="add" size={22} />,
         }}
       />

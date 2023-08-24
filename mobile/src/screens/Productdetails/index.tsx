@@ -4,11 +4,11 @@ import { View, StyleSheet, Button} from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 
-export function Productdetails() {
+export function ProductDetails() {
     const navigation = useNavigation();
   
     function openScreen(){
-        navigation.navigate('productprofile')
+        navigation.navigate('productProfile')
     }
   
     return (

@@ -4,7 +4,7 @@ import { View, StyleSheet, Button} from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 
-export function Productprofile() {
+export function ProductProfile() {
     const navigation = useNavigation();
   
     function openScreen(){

@@ -4,16 +4,17 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { DrawerRoutes } from '../drawer/drawer.routes';
 //Telas
 import { Login } from "../../screens/ScreenLogin";
-import { ForgetPassword } from "../../screens/ScreenForgetPassword";
-import { Home } from "../../screens/ScreenHome";
 import { Register } from "../../screens/ScreenRegister";
+// Handle Password
 import { SendEmail } from "../../screens/ScreenSEmail";
-import { Profile } from "../../screens/ScreenProfile";
-import { Environments } from "../../screens/ScreenEnvironments";
-import { Environmentsprofile } from "../../screens/ScreenEnvironmentsprofile";
-import { product } from "../../screens/ScreenProduct";
-import { Productdetails } from "../../screens/ScreenProductdetails";
-import { productprofile } from "../../screens/ScreenProductprofile";
+import { ForgetPassword } from "../../screens/ForgetPassword" 
+// Home
+import { Home } from "../../screens/Home"
+import { Profile } from "../../screens/Profile"
+import { Product } from "../../screens/Product"
+import { Environments } from "../../screens/Environments"
+import { ProductDetails } from "../../screens/ProductDetails"
+import { ProductProfile } from "../../screens/ProductProfile"
 
 const { Screen, Navigator } = createStackNavigator();
 
@@ -51,6 +52,7 @@ export function StackRoutes() {
 
       <Screen
         name="Home"
+        component={Home}
         options={{
           title: "Home",
           headerShown: false,
@@ -60,7 +62,6 @@ export function StackRoutes() {
           },
           headerTintColor: "#fff",
         }}
-        component={Home}
       />
 
       <Screen
@@ -95,7 +96,7 @@ export function StackRoutes() {
         }}
         component={Environments}
       />
-      <Screen
+      {/* <Screen
         name="Environmentsprofile"
         options={{
           title: "Environmentsprofile",
@@ -107,9 +108,9 @@ export function StackRoutes() {
           headerTintColor: "#fff",
         }}
         component={Environmentsprofile}
-      />
+      /> */}
       <Screen
-        name="product"
+        name="Product"
         options={{
           headerShown: false,
           title: "product",
@@ -119,7 +120,7 @@ export function StackRoutes() {
           },
           headerTintColor: "#fff",
         }}
-        component={product}
+        component={Product}
       />
       <Screen
         name="Productdetails"
@@ -132,21 +133,21 @@ export function StackRoutes() {
           },
           headerTintColor: "#fff",
         }}
-        component={Productdetails}
+        component={ProductDetails}
       />
 
       <Screen
-        name="productprofile"
+        name="ProductProfile"
         options={{
           headerShown: false,
-          title: "productprofile",
+          title: "ProductProfile",
           headerTitleAlign: "left",
           headerStyle: {
             backgroundColor: "navy",
           },
           headerTintColor: "#fff",
         }}
-        component={productprofile}
+        component={ProductProfile}
       />
     </Navigator>
   );
