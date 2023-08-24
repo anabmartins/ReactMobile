@@ -9,14 +9,15 @@ export function Home() {
     const navigation = useNavigation();
   
     function openScreen(){
-        navigation.navigate('Profile')
+        navigation.navigate('product')
     }
   
     return (
         <View style={styles.container}>
-       
+        <Text style={styles.title}>Bem-Vindo</Text>
+        <Text style={styles.subtitle}>ao Controle de estoque</Text>
         <TouchableOpacity style={styles.button} onPress={(openScreen)}>
-        <Text style={styles.buttonText}>Proximo</Text>
+        <Text style={styles.buttonText}>Cadastrar Produto</Text>
         </TouchableOpacity>
        
     </View>

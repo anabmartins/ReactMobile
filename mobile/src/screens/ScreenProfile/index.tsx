@@ -9,14 +9,14 @@ export function Profile() {
     const navigation = useNavigation();
   
     function openScreen(){
-        navigation.navigate('Environments')
+        navigation.navigate('Login')
     }
   
     return (
         <View style={styles.container}>
        
         <TouchableOpacity style={styles.button} onPress={(openScreen)}>
-        <Text style={styles.buttonText}>Proximo</Text>
+        <Text style={styles.buttonText}>Sair</Text>
         </TouchableOpacity>
        
     </View>

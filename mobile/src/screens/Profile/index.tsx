@@ -8,7 +8,7 @@ export function Profile() {
     const navigation = useNavigation();
   
     function openScreen(){
-        navigation.navigate('environments')
+        navigation.navigate('Login')
     }
   
     return (
