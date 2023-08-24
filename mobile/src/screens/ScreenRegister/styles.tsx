@@ -8,8 +8,10 @@ const styles = StyleSheet.create({
     display:'flex',
     backgroundColor: '#A1C2E3',
   },
-  login:{
+  register:{
+    justifyContent: 'center',
     width: '66%',
+    alignItems: 'center',
     margin: 20,
   },
   inputs:{
@@ -18,6 +20,7 @@ const styles = StyleSheet.create({
     padding: 12,
     borderRadius: 5,
     borderWidth: 1,
+    margin: 18,
     borderColor: 'grey',
     textAlign: 'center',
     fontStyle: 'italic'
@@ -90,7 +93,31 @@ const styles = StyleSheet.create({
     width: 13,
     height: 14,
     marginLeft: 5, 
-  }
+  },
+  modalContainer: {
+    backgroundColor: '#D9D9D9',
+    borderRadius: 10,
+    padding: 20,
+  },
+  modalText: {
+    fontSize: 18,
+    marginBottom: 20,
+    textAlign: 'center',
+  },
+  modalButtons: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+  },
+  modalButton: {
+    backgroundColor: '#1E4DD9',
+    padding: 10,
+    borderRadius: 5,
+    marginHorizontal: 10,
+  },
+  modalButtonText: {
+    color: 'white',
+    fontSize: 16,
+  },
   
 })
 

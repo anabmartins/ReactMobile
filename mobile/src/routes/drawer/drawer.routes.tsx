@@ -2,13 +2,9 @@ import * as React from 'react';
 
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { MaterialIcons } from "@expo/vector-icons";
-import { FontAwesome5 } from "@expo/vector-icons";
 // Telas
-import { Login } from "../../screens/ScreenLogin";
-import { ForgetPassword } from "../../screens/ScreenForgetPassword"; 
 import { Home } from "../../screens/ScreenHome"; 
 import { Register } from "../../screens/ScreenRegister";
-import { SendEmail } from "../../screens/ScreenSEmail"; 
 import { Profile } from "../../screens/ScreenProfile";
 import { Environments } from "../../screens/ScreenEnvironments"; 
 import { Environmentsprofile } from "../../screens/ScreenEnvironmentsprofile";
@@ -35,15 +31,6 @@ export function DrawerRoutes() {
         component={Register}
         options={{
           drawerLabel: "Register",
-          drawerIcon: () => <MaterialIcons name="add" size={22} />,
-        }}
-      />
-
-      <Screen
-        name="SendEmail"
-        component={SendEmail}
-        options={{
-          drawerLabel: "SendEmail",
           drawerIcon: () => <MaterialIcons name="add" size={22} />,
         }}
       />

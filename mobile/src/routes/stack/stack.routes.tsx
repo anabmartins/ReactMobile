@@ -53,6 +53,7 @@ export function StackRoutes() {
         name="Home"
         options={{
           title: "Home",
+          headerShown: false,
           headerTitleAlign: "left",
           headerStyle: {
             backgroundColor: "navy",
@@ -66,11 +67,7 @@ export function StackRoutes() {
         name="Register"
         options={{
           title: "Screen Register",
-          headerTitleAlign: "left",
-          headerStyle: {
-            backgroundColor: "navy",
-          },
-          headerTintColor: "#fff",
+          headerShown: false,
         }}
         component={Register}
       />
@@ -78,11 +75,7 @@ export function StackRoutes() {
         name="SendEmail"
         options={{
           title: "SendEmail",
-          headerTitleAlign: "left",
-          headerStyle: {
-            backgroundColor: "navy",
-          },
-          headerTintColor: "#fff",
+          headerShown: false,
         }}
         component={SendEmail}
       />
@@ -90,11 +83,7 @@ export function StackRoutes() {
         name="Profile"
         options={{
           title: "Profile",
-          headerTitleAlign: "left",
-          headerStyle: {
-            backgroundColor: "navy",
-          },
-          headerTintColor: "#fff",
+          headerShown: false,
         }}
         component={Profile}
       />
@@ -102,11 +91,7 @@ export function StackRoutes() {
         name="Environments"
         options={{
           title: "Environments",
-          headerTitleAlign: "left",
-          headerStyle: {
-            backgroundColor: "navy",
-          },
-          headerTintColor: "#fff",
+          headerShown: false,
         }}
         component={Environments}
       />
@@ -114,6 +99,7 @@ export function StackRoutes() {
         name="Environmentsprofile"
         options={{
           title: "Environmentsprofile",
+          headerShown: false,
           headerTitleAlign: "left",
           headerStyle: {
             backgroundColor: "navy",
@@ -125,6 +111,7 @@ export function StackRoutes() {
       <Screen
         name="product"
         options={{
+          headerShown: false,
           title: "product",
           headerTitleAlign: "left",
           headerStyle: {
@@ -137,6 +124,7 @@ export function StackRoutes() {
       <Screen
         name="Productdetails"
         options={{
+          headerShown: false,
           title: "Productdetails",
           headerTitleAlign: "left",
           headerStyle: {
@@ -150,6 +138,7 @@ export function StackRoutes() {
       <Screen
         name="productprofile"
         options={{
+          headerShown: false,
           title: "productprofile",
           headerTitleAlign: "left",
           headerStyle: {

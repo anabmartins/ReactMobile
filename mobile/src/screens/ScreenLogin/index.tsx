@@ -65,6 +65,10 @@ export function Login() {
         ></Image>
       </TouchableOpacity>
 </View>
+<Image
+         source={require("../../../assets/senai-logo.svg")}
+         style={styles.senai}
+        ></Image>
     </View>
   );
 }
