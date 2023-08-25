@@ -8,19 +8,22 @@ const styles = StyleSheet.create({
     display:'flex',
     backgroundColor: '#A1C2E3',
   },
-  login:{
-    width: '66%',
-    margin: 20,
-  },
-  inputs:{
+  card:{
+    justifyContent: 'center',
+    display:'flex',
     backgroundColor: '#D9D9D9',
-    width: '100%',
-    padding: 12,
+    marginTop: 36,
+    marginBottom: 36,
+    width: '60%',
+    padding: 5,
     borderRadius: 5,
     borderWidth: 1,
-    borderColor: 'grey',
-    textAlign: 'center',
-    fontStyle: 'italic'
+    borderColor: 'grey', 
+  },
+  props: {
+    fontStyle: 'italic',
+    margin: 5,
+    fontWeight: 'bold',
   },
   logo: {
     width: 134,
@@ -29,32 +32,13 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     marginTop: 17,
   },
-  senai:{
-    width: 145,
-    height: 43,
-    resizeMode: "contain",
-    marginBottom: 20,
-    marginTop: 110,
-  },
-  title: {
+ title: {
     color: '#173BA6',
     fontSize: 30,
     fontWeight: 'bold',
     marginBottom: 5,
   },
-  subtitle: {
-    color: '#737373',
-    fontSize: 17,
-    fontWeight: 'bold',
-    fontFamily: 'Quattrocento_400Regular',
-    marginBottom: 27,
-  },
-  cadastro: {
-    fontSize: 15,
-    marginBottom: 10,
-    color: '#FA321A',
-  },
-  button: {
+ button: {
     backgroundColor: '#1E4DD9',
     paddingHorizontal: 20,
     paddingVertical: 10,
@@ -75,21 +59,26 @@ const styles = StyleSheet.create({
     marginTop: 10,
     color: '#6A6A6A',
   },
-  senha:{
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  s:{
+  inputSearchHolder: {
     display: 'flex',
     flexDirection: 'row',
-    alignItems: 'center', 
+    backgroundColor: '#D9D9D9',
+    borderRadius: 20,
+    height: 40,
+    width: "100%",
+    padding: 20,
+    marginTop:20,
+    alignItems: 'center',
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 3,
+    },
+    shadowOpacity: 0.29,
+    shadowRadius: 4.65,
+    elevation: 7,
+
   },
-  qm:{
-    width: 13,
-    height: 14,
-    marginLeft: 5, 
-  }
   
 })
 

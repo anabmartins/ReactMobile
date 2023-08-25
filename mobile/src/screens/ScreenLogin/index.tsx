@@ -1,27 +1,16 @@
 import * as React from "react";
 import { Image, View, Text, TextInput, TouchableOpacity } from "react-native";
 import { useFonts, Inter_100Thin, Inter_700Bold } from '@expo-google-fonts/inter';
-import { Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/Roboto';
-import { Quattrocento_700Bold, Quattrocento_400Regular } from '@expo-google-fonts/Quattrocento';
-
 import { useNavigation } from "@react-navigation/native";
 
 import styles from "./styles";
 
 export function Login() {
 
-  const [fontsLoaded] = useFonts({
-    Inter_100Thin,
-    Inter_700Bold,
-    Roboto_400Regular,
-    Quattrocento_700Bold,
-    Quattrocento_400Regular,
-    Roboto_700Bold
-  });
-
-  if (!fontsLoaded) {
-    return null;
-  }
+useFonts({
+  Inter_100Thin,
+  Inter_700Bold,
+});
 
   const navigation = useNavigation();
 

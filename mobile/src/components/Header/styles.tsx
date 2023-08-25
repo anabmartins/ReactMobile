@@ -4,10 +4,9 @@ const styles = StyleSheet.create({
     headerContainer:{
         flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'center',
         paddingHorizontal: 16,
         backgroundColor: '#A1C2E3',
-        padding: 10
+        padding: 20
     },
     headerLogo: {
         width: 37,
@@ -20,6 +19,12 @@ const styles = StyleSheet.create({
         resizeMode: 'contain',
         marginRight: 10,
       },
+      menu: {
+        width: 30,
+        height: 30, 
+        resizeMode: 'contain',
+        marginRight: 10,
+      }
 })
 
 export default styles;

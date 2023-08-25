@@ -1,6 +1,6 @@
 import React from 'react';
-import { View, StyleSheet, TouchableOpacity, Text} from 'react-native';
-
+import { View, TouchableOpacity, Text} from 'react-native';
+import { useFonts, Inter_100Thin, Inter_700Bold } from '@expo-google-fonts/inter';
 import { useNavigation } from '@react-navigation/native';
 
 import styles from './styles'

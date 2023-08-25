@@ -8,3 +8,5 @@ npx expo install react-native-gesture-handler react-native-reanimated
 npx expo install react-native-web@~0.18.10 react-dom@18.2.0 @expo/webpack-config@^18.0.1
 npx expo install @expo/webpack-config@^18.0.1
 npm install react-native-modal
+npx expo install expo-font
+expo install @expo-google-fonts/Inter expo-font

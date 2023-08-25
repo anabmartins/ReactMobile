@@ -39,8 +39,8 @@ export function StackRoutes() {
       <Screen
         name="ForgetPassword"
         options={{
-          headerShown: false,
           title: "ForgetPassword",
+          headerShown: false,
           headerTitleAlign: "left",
           headerStyle: {
             backgroundColor: "navy",
@@ -67,8 +67,8 @@ export function StackRoutes() {
       <Screen
         name="Register"
         options={{
-          title: "Screen Register",
           headerShown: false,
+          title: "Screen Register",
         }}
         component={Register}
       />

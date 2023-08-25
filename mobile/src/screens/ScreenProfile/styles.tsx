@@ -8,6 +8,22 @@ const styles = StyleSheet.create({
     display:'flex',
     backgroundColor: '#A1C2E3',
   },
+  card:{
+    justifyContent: 'center',
+    display:'flex',
+    backgroundColor: '#D9D9D9',
+    marginBottom: 36,
+    width: '90%',
+    padding: 15,
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: 'grey',
+  },
+  props: {
+    fontStyle: 'italic',
+    margin: 5,
+    fontWeight: 'bold',
+  },
   login:{
     width: '66%',
     margin: 20,
@@ -39,14 +55,15 @@ const styles = StyleSheet.create({
   title: {
     color: '#173BA6',
     fontSize: 30,
-    fontWeight: 'bold',
+    fontWeight: 'normal',
     marginBottom: 5,
+    fontFamily: 'Inter-Black',
   },
   subtitle: {
     color: '#737373',
-    fontSize: 17,
+    fontSize: 14,
     fontWeight: 'bold',
-    fontFamily: 'Quattrocento_400Regular',
+    fontFamily: 'Inter-Black',
     marginBottom: 27,
   },
   cadastro: {
