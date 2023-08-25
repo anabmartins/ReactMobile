@@ -21,7 +21,7 @@ export function Productdetails() {
     return (
         <View style={styles.container}>
        <Text style={styles.title}>Detalhes do Produto:</Text>
-       
+       <View style={styles.card}></View>
         <TouchableOpacity style={styles.button} onPress={(openScreen)}>
         <Text style={styles.buttonText}>Atualizar</Text>
         </TouchableOpacity>

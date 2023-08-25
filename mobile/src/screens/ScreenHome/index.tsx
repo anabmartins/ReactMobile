@@ -17,7 +17,7 @@ export function Home() {
         <Text style={styles.title}>Bem-Vindo</Text>
         <Text style={styles.subtitle}>ao Controle de estoque</Text>
         <TouchableOpacity style={styles.button} onPress={(openScreen)}>
-        <Text style={styles.buttonText}>Cadastrar Produto</Text>
+        <Text style={styles.buttonText}>Ir Produtos</Text>
         </TouchableOpacity>
        
     </View>

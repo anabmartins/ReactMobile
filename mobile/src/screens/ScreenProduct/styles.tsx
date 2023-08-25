@@ -13,6 +13,7 @@ const styles = StyleSheet.create({
     display:'flex',
     backgroundColor: '#D9D9D9',
     marginBottom: 36,
+    marginTop: 36,
     width: '90%',
     padding: 15,
     borderRadius: 10,
@@ -106,7 +107,27 @@ const styles = StyleSheet.create({
     width: 13,
     height: 14,
     marginLeft: 5, 
-  }
+  },
+  inputSearchHolder: {
+    display: 'flex',
+    flexDirection: 'row',
+    backgroundColor: '#D9D9D9',
+    borderRadius: 20,
+    height: 40,
+    width: "100%",
+    padding: 20,
+    marginTop:20,
+    alignItems: 'center',
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 3,
+    },
+    shadowOpacity: 0.29,
+    shadowRadius: 4.65,
+    elevation: 7,
+
+  },
   
 })
 
