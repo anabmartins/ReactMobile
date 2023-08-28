@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
         width: 30,
         height: 30, 
         resizeMode: 'contain',
-        marginRight: 10,
+        marginRight: 12,
       }
 })
 
